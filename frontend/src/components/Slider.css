@@ -1,0 +1,54 @@
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create a container for the full-page slider */
+.slider-container {
+  /* width: 100vw; */
+  /* height: 100vh; 100% of the viewport height */
+  /* margin: 20px; Add margin to the slider container */
+  /* padding: 20px; Add padding to the slider container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Center the slider content */
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Set the height and width of slider images */
+.slider .slider-image {
+  /* max-width: "100%"; */
+  height: "auto";
+  object-fit: "fill";
+}
+
+/* Optional: Add styles for navigation bullets */
+.slider-navigation-bullets {
+  list-style: none;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  }
+
+.slider-navigation-bullets li {
+  width: 10px;
+  height: 10px;
+  background-color: #dfcece;
+  border-radius: 50%;
+  margin: 5px 5px;
+  cursor: pointer;
+  
+}
+
+.slider-navigation-bullets li.active {
+  background-color: #d12828; /* Use the color you prefer */
+}

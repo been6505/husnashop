@@ -1,0 +1,38 @@
+strong,
+c {
+  font-size: clamp(1.25rem, 0.5vw, 2rem);
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img {
+  transition: transform 0.3s ease;
+
+  border-radius: 2rem;
+}
+
+.img:hover {
+  transform: scale(1.10);
+
+}
+
+.card {
+  border-Radius: 2rem;
+  /* width: 100%; */
+  /* height: 40vh; */
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  text-align: center;
+}
+
+#name #price {
+  /* font-size: clamp(14px, 1vw, 24px); */
+  font-size: calc(10px + 2vmin);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
